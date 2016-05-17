@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="COMP2007_Lesson1.Default" %>
 
 <!DOCTYPE html>
-
+<!--Author Name: Yandong Wang-->
 <html lang="en">
 <head runat="server">
     <title></title>
