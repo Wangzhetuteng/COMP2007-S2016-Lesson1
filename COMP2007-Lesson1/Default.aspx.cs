@@ -9,16 +9,6 @@ namespace COMP2007_Lesson1
 {
     public partial class Default : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        protected void SubmitButton_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         protected void SubmitButton_Click1(object sender, EventArgs e)
         {
             FullNameTextBox.Text = FirstNameTextBox.Text.ToString() + " " + LastNameTextBox.Text.ToString();
