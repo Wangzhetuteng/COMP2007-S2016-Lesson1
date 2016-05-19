@@ -58,22 +58,31 @@ namespace COMP2007_Lesson1 {
         protected global::System.Web.UI.WebControls.TextBox LastNameTextBox;
         
         /// <summary>
-        /// Label1 control.
+        /// AgeTextLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label AgeTextLabel;
         
         /// <summary>
-        /// TextBox1 control.
+        /// AgeTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox AgeTextBox;
+        
+        /// <summary>
+        /// AgeRangeValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator AgeRangeValidator;
         
         /// <summary>
         /// SubmitButton control.

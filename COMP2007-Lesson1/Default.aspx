@@ -9,6 +9,8 @@
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The description of my page" />
 </head>
 <body>
     <nav class="navbar navbar-inverse">
@@ -45,17 +47,21 @@
                 <h1>User Profile</h1>
                 <form class="form" id="form1" runat="server">
                     <div class="form-group">
-                        <asp:Label ID="FirstNameLabel" Text="First Name" runat="server" />
-                        <asp:TextBox CssClass="form-control" ID="FirstNameTextBox" runat="server"  required="true"/>
+                        <asp:Label ID="FirstNameLabel" runat="server" Text="First Name"></asp:Label>
+                        <asp:TextBox CssClass="form-control" ID="FirstNameTextBox" runat="server" required="true" CausesValidation="True"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <asp:Label ID="LastNameLabel" Text="Last Name" runat="server" />
-                        <asp:TextBox CssClass="form-control" ID="LastNameTextBox" runat="server" required="true"/>
+                        <asp:Label ID="LastNameLabel" runat="server" Text="Last Name"></asp:Label>
+                        <asp:TextBox CssClass="form-control" ID="LastNameTextBox" runat="server" required="true" CausesValidation="True"></asp:TextBox>
                     </div>
+                    
                     <div class="form-group">
-                        <asp:Label ID="Label1" Text="Age" runat="server" />
-                        <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" required="true"/>
+                        <asp:Label ID="AgeTextLabel" runat="server" Text="Age"></asp:Label>
+                        <asp:TextBox CssClass="form-control" ID="AgeTextBox" runat="server" required="true" CausesValidation="True"></asp:TextBox>
+                        <br />
+                        <asp:RangeValidator CssClass="alert alert-danger" ID="AgeRangeValidator" runat="server" ErrorMessage="Please Enter A Validate Number Between 1 And 130." MaximumValue="130" MinimumValue="1" Type="Integer" ControlToValidate="AgeTextBox"></asp:RangeValidator>
                     </div>
+                    
                     <asp:Button CssClass="btn btn-primary" ID="SubmitButton" Text="Submit" runat="server" OnClick="SubmitButton_Click1" />
                     <br />
                     <hr />
