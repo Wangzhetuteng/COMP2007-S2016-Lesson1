@@ -61,7 +61,6 @@
                         <br />
                         <asp:RangeValidator CssClass="alert alert-danger" ID="AgeRangeValidator" runat="server" ErrorMessage="Please Enter A Validate Number Between 1 And 130." MaximumValue="130" MinimumValue="1" Type="Integer" ControlToValidate="AgeTextBox"></asp:RangeValidator>
                     </div>
-                    
                     <asp:Button CssClass="btn btn-primary" ID="SubmitButton" Text="Submit" runat="server" OnClick="SubmitButton_Click1" />
                     <br />
                     <hr />
